@@ -1,13 +1,14 @@
 #import user_interface and calculator
-from user_interface import userinterface 
+from user_interface import user_interface 
 from calculator import calculator
 
-interface = userinterface()
+interface = user_interface()
 calc = calculator()
 #user input if they want to try again
+user_interface.print_statement
 try_again='y'
 while try_again=='y':
-    userinterface()
+    user_interface()
 #ask operation
     try:    
         integer1 = interface.integer1()
@@ -36,8 +37,8 @@ while try_again=='y':
 
         # using the division function
         elif main_operation == "4":
-            difference = calc.division (integer1, integer2)
-            interface.quotient_operation(quotient)
+            quot = calc.division (integer1, integer2)
+            interface.quot_operation (quot)
 
         else:
             print ("There seems to be an error. Are you sure you entered an integer?")

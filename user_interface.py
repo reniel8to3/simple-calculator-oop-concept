@@ -1,5 +1,5 @@
 #user interface
-class userinterface():
+class user_interface():
     #print statement
     def print_statement(self):
         print ("This program is designed to function as a simple calculator. This program can perform Addition, Subtraction, Multiplication, and Division.")
@@ -27,5 +27,5 @@ class userinterface():
         print("The product of your input is ", str(product))
 
     # define division function
-    def quotient_operation (self, quotient):
-        print("The quotient of your input is ", str(quotient))
+    def quot_operation (self, quot):
+        print("The quotient of your input is ", str(quot))
