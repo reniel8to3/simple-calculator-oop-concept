@@ -5,10 +5,10 @@ class userinterface:
         print ("This program is designed to function as a simple calculator. This program can perform Addition, Subtraction, Multiplication, and Division.")
     #ask user for input
     def integer1 (self):
-        int(input('Input the first integer: '))
+        integer1 = int(input('Input the first integer: '))
         return integer1
     def integer2 (self):
-        int(input('Input the second integer: '))
+        integer2 = int(input('Input the second integer: '))
         return integer2
     #ask for operation
     def what_operation (self):
@@ -16,16 +16,16 @@ class userinterface:
         return operation
     # show answer for addition
     def sum_operation (self, sum):
-        print("The sum of " , integer1, "and ", integer2, "is ", addition(integer1, integer2))
+        print("The sum of " , integer1, "and ", integer2, "is ", str(sum))
 
     # show output for subtraction
     def difference_operation (self, difference):
-        print("The difference of " , integer1, "and ", integer2, "is ", subtraction(integer1, integer2))
+        print("The difference of " , integer1, "and ", integer2, "is ", str(difference))
 
     # define multiplication functions
     def product_operation (self, product):
-        print("The product of " , integer1, "and ", integer2, "is ", multiplication(integer1, integer2))
+        print("The product of " , integer1, "and ", integer2, "is ", str(product))
 
     # define division function
     def quotient_operation (self, quotient):
-        print("The quotient of " , integer1, "and ", integer2, "is ", division(integer1, integer2))
+        print("The quotient of " , integer1, "and ", integer2, "is ", str(quotient))
