@@ -14,12 +14,42 @@ while try_again=='y':
         print ()
         integer2 = interface.integer2()
         print()
-    #adding value error and zero division error
-    except ZeroDivisionError:
-        print("You can't divide by zero. Please try again")
-        print ()
-        continue
     except ValueError:
         print("There seems to be an error. Are you sure you entered an integer?")
         print ()
         continue
+    main_operation = interface.what_operation()
+    # addition
+    try:
+        if main_operation == "1":
+            sum = calc.addition (integer1, integer2)
+            interface.sum_operation(sum)
+    #subtraction
+        elif main_operation == "2":
+            difference = calc.subtraction (integer1, integer2)
+            interface.difference_operation(difference)
+
+        # using the multiply function
+        elif main_operation == "3":
+            product = calc.multiplication (integer1, integer2)
+            interface.product_operation(product)
+
+        # using the division function
+        elif main_operation == "4":
+            difference = calc.division (integer1, integer2)
+            interface.quotient_operation(quotient)
+
+        else:
+            print ("There seems to be an error. Are you sure you entered an integer?")
+            continue
+        #adding value error and zero division error
+    except ZeroDivisionError:
+        print("You can't divide by zero. Please try again")
+        print ()
+        continue
+    # asking user if they want to try the program again
+    try_again = input("Do you want to try again? Type y if yes and n if no.")
+    if try_again =='n':
+        print ('Thank you for using this program.')
+        print ()
+        break
