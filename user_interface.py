@@ -16,16 +16,16 @@ class userinterface:
         return operation
     # show answer for addition
     def sum_operation (self, sum):
-        print("The sum of " , integer1, "and ", integer2, "is ", str(sum))
+        print("The sum of your input is ", str(sum))
 
     # show output for subtraction
     def difference_operation (self, difference):
-        print("The difference of " , integer1, "and ", integer2, "is ", str(difference))
+        print("The difference of your input is ", str(difference))
 
     # define multiplication functions
     def product_operation (self, product):
-        print("The product of " , integer1, "and ", integer2, "is ", str(product))
+        print("The product of your input is ", str(product))
 
     # define division function
     def quotient_operation (self, quotient):
-        print("The quotient of " , integer1, "and ", integer2, "is ", str(quotient))
+        print("The quotient of your input is ", str(quotient))
