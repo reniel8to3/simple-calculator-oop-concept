@@ -10,5 +10,8 @@ def integer2 (self):
     int(input('Input the second integer: '))
     return integer2
 #ask for operation
+def what_operation (self):
+    operation = input("What do you want the program to solve? 1 - Addition. 2 - Subtraction. 3 - Multiplication. 4- Division. ")
+    return operation
 #show answer
 #ask to try again
