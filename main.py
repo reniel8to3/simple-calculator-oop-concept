@@ -9,13 +9,17 @@ try_again='y'
 while try_again=='y':
     userinterface()
 #ask operation
-try:    
-    integer1 = interface.integer1()
-    print ()
-    integer2 = interface.integer2()
-    print()
-#adding value error and zero division error
-except ZeroDivisionError:
-    print("You can't divide by zero. Please try again")
-except ValueError:
-    print("There seems to be an error. Are you sure you entered an integer?")
+    try:    
+        integer1 = interface.integer1()
+        print ()
+        integer2 = interface.integer2()
+        print()
+    #adding value error and zero division error
+    except ZeroDivisionError:
+        print("You can't divide by zero. Please try again")
+        print ()
+        continue
+    except ValueError:
+        print("There seems to be an error. Are you sure you entered an integer?")
+        print ()
+        continue
