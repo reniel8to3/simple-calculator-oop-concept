@@ -1,5 +1,5 @@
 #create class
-class calculator:
+class calculator():
 #define operators
     def addition (self, integer1, integer2):
         sum =  integer1 + integer2
