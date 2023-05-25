@@ -1,5 +1,5 @@
 #user interface
-class userinterface:
+class userinterface():
     #print statement
     def print_statement(self):
         print ("This program is designed to function as a simple calculator. This program can perform Addition, Subtraction, Multiplication, and Division.")
