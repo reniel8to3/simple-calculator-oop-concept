@@ -1,9 +1,11 @@
 #import user_interface and calculator
 from user_interface import user_interface 
 from calculator import calculator
+from inheritance import renielcalculator
 
 interface = user_interface()
 calc = calculator()
+rencalculator = renielcalculator()
 #user input if they want to try again
 user_interface.print_statement
 try_again='y'
@@ -39,6 +41,16 @@ while try_again=='y':
         elif main_operation == "4":
             quot = calc.division (integer1, integer2)
             interface.quot_operation (quot)
+
+        # using the remainder function
+        elif main_operation == "5":
+            rem = rencalculator.remainder_operation (integer1, integer2)
+            interface.rem_operation (rem)
+
+        # using the remainder function
+        elif main_operation == "6":
+            exp = rencalculator.exponent_operation (integer1, integer2)
+            interface.exp_operation (exp)
 
         else:
             print ("There seems to be an error. Are you sure you entered an integer?")

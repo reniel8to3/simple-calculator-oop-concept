@@ -12,7 +12,7 @@ class user_interface():
         return integer2
     #ask for operation
     def what_operation (self):
-        operation = input("What do you want the program to solve? 1 - Addition. 2 - Subtraction. 3 - Multiplication. 4- Division. ")
+        operation = input("What do you want the program to solve? 1 - Addition. 2 - Subtraction. 3 - Multiplication. 4- Division. 5 - Remainder. 6 - Exponent")
         return operation
     # show answer for addition
     def sum_operation (self, sum):
@@ -29,3 +29,12 @@ class user_interface():
     # define division function
     def quot_operation (self, quot):
         print("The quotient of your input is ", str(quot))
+
+    # define division function
+    def rem_operation (self, rem):
+        print("The remainder of your input is ", str(rem))
+
+    # define division function
+    def exp_operation (self, exp):
+        print("The exponent of your input is ", str(exp))
+
